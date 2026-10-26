@@ -1,0 +1,30 @@
+# Java / Spring Boot
+backend/target/
+*.class
+*.jar
+*.war
+
+# Node.js / React / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Logs
+*.log
+error-log.txt
+npm-debug.log*
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db

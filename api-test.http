@@ -1,0 +1,35 @@
+### 1. Health Check
+GET http://localhost:8080/api/health
+
+###
+
+### 2. Diffie-Hellman Key Exchange
+POST http://localhost:8080/api/simulations/diffie-hellman
+Content-Type: application/json
+
+{
+  "p": 23,
+  "g": 5,
+  "a": 6,
+  "b": 15
+}
+
+###
+
+### 3. Man-in-the-Middle Simulation
+POST http://localhost:8080/api/simulations/mitm
+Content-Type: application/json
+
+{
+  "p": 37,
+  "g": 2,
+  "a": 5,
+  "b": 8,
+  "x": 9,
+  "y": 12
+}
+
+###
+
+### 4. Simulation History
+GET http://localhost:8080/api/simulations/history
